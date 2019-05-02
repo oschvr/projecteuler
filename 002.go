@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//Measure exec time
+
 	start := time.Now()
 
 	i, c, sum := [...]int{1, 1}, 0, 0
@@ -18,6 +18,6 @@ func main() {
 			sum += c
 		}
 	}
-	fmt.Println("Program took: ", time.Since(start))
+	fmt.Println("Execution time: ", time.Since(start))
 	fmt.Print(sum, "\n")
 }
